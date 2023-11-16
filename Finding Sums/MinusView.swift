@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MinusView.swift
 //  Finding Sums
 //
 //  Created by Benjamin Lavallee on 2023-11-16.
@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MinusView: View {
     //MARK: Stored propterties
     @State var firstnumber: Int = 1
     @State var secondnumber: Int = 1
     
     //MARK: Computed properties
     var sum: Int {
-        return firstnumber + secondnumber
+        return firstnumber - secondnumber
     }
     
     var body: some View {
@@ -52,5 +52,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    MinusView()
 }
